@@ -23,25 +23,29 @@ def test_text(text_test: str):
         lab['fg'] = '#000000'
         comand_re = re.compile('{}'.format(text_test))
         text0_2_1.delete(1.0, tkinter.END)
-        v = comand_re.findall(text0_2_0.get(1.0, 'end-1c'))
-        text0_2_1.insert(tkinter.INSERT, str(v))
+        v = comand_re.findall(re.escape(text0_2_0.get(1.0, 'end-1c')))
+        if not v:
+            lab['fg'] = '#e05555'
+        else:
+            text0_2_1.insert(tkinter.INSERT, str(v))
+
     except re.error:
         lab['fg'] = '#e05555'
-        test_text('')
 
 
 def control():
     """
     Ожидание 
     """
-    global Check_a, Check_b #pylint: disable=W0603
+    global Check_a, Check_b  # pylint: disable=W0603
 
     a = text0_1.get(1.0, 'end-1c')
     B = text0_2_0.get(1.0, 'end-1c')
-    if a != Check_a or B != Check_b: #pylint: disable=E0601
+    if a != Check_a or B != Check_b:  # pylint: disable=E0601
         Check_a, Check_b = a, B
         lab['text'] = f're.compile("{str(a)}")'
-        test_text(str(a)) if a != '' else text0_2_1.delete(1.0, tkinter.END) #pylint: disable=W0106
+        test_text(str(a)) if a != '' else text0_2_1.delete(
+            1.0, tkinter.END)  # pylint: disable=W0106
         windo.after(100, control)
     windo.after(100, control)
 
@@ -86,4 +90,3 @@ bat_past.pack(fill=tkinter.BOTH)
 #________________________________________________________#
 control()
 windo.mainloop()
-

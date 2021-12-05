@@ -8,6 +8,7 @@
 
 ```bash
 git clone https://github.com/denisxab/RE_inst.git;
+cd RE_inst;
 python -m venv venv_dj && . venv_dj/bin/activate;
 pip install -r req.txt;
 cd re_view;

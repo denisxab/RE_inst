@@ -31,11 +31,9 @@
 
     <div class="form-floating mb-4" style="width:500px;">
         <select class="form-select" id="SelectReFun">
-            <option>match</option>
-            <option>search</option>
-            <option>findall</option>
-            <option>split</option>
-            <option>sub</option>
+            {% for re_fun in list_re_fun %}
+                <option>{{ re_fun }}</option>
+            {% endfor %}
         </select>
         <label style="padding-top: 15px"> Регулярная функция:</label>
     </div>

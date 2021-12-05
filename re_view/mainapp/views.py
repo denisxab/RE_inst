@@ -1,5 +1,4 @@
 import re
-from typing import Any
 
 from django.core.handlers.wsgi import WSGIRequest
 from django.http import JsonResponse
@@ -31,20 +30,10 @@ class RePage(View):
 		request.method == "GET"
 		"""
 		
-		select_re_fun = request.GET.get("re", 'match')
-		
 		return render(request,
 		              template_name=self.template_name,
-		              context=self.get_context_data(select_re_fun))
-	
-	def get_context_data(self, select_re_fun, **kwargs) -> dict[str, Any]:
-		"""
-		Сформировать контекст для шаблона `html`
-		"""
-		context = {
-				"select_re_fun": select_re_fun,
-		}
-		return context
+		              context={"list_re_fun": self.convert_srt_in_fun.keys()}
+		              )
 	
 	def post(self, request: WSGIRequest, *args, **kwargs):
 		"""

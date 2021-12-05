@@ -34,7 +34,7 @@ $(document).ready(function () {
 	// Отправка данных на сервер, для выполнения регулярных выражения
 	function SendDataFromServer_Re() {
 		
-		// Получаем данные из формы, и создаем обьект
+		// Получаем данные из формы, и создаем объект
 		const dataVar = {
 			csrfmiddlewaretoken: $('#SendTextFromRE').attr('csrfmiddlewaretoken'), // Специально имя для токена
 			// Данные для проверки регулярного выражения

@@ -1,0 +1,38 @@
+:root {
+    --Bg: #004581;
+    --Color: #dde8f0;
+    --Border: #97cbdc;
+}
+
+input, textarea, select {
+    background: var(--Color);
+    border-radius: 4px;
+}
+
+body {
+    background: var(--Bg);
+    color: var(--Color);
+}
+
+html, body {
+    height: 100%;
+}
+
+.menu_container {
+    margin: 30px;
+    border: var(--Border) 4px solid;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.textarea_container {
+    border: var(--Border) 4px solid;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.textarea_container textarea {
+    padding: 5px;
+}

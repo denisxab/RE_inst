@@ -23,7 +23,6 @@ class RePage(View):
 			"split"  : re.split,
 			"sub"    : re.sub,
 			"findall": re.findall,
-			''       : re.match,
 	}
 	
 	def get(self, request: WSGIRequest):
@@ -54,7 +53,7 @@ class RePage(View):
 		"""
 		
 		# Регулярная функция
-		re_fun = self.convert_srt_in_fun.get(request.POST.get('flag_func_re', 'match'))
+		re_fun = self.convert_srt_in_fun.get(request.POST.get('flag_func_re', 'match'), re.match)
 		# Шаблон для регулярной функции
 		templates_re = request.POST.get('templates_re', None)
 		# Текст для регулярной функции

@@ -35,7 +35,8 @@ INSTALLED_APPS = [
 		'django.contrib.sessions',
 		'django.contrib.messages',
 		'django.contrib.staticfiles',
-		'mainapp.apps.MainappConfig'
+		'bootstrap5',
+		'mainapp.apps.MainappConfig',
 ]
 
 MIDDLEWARE = [
@@ -136,15 +137,16 @@ MEDIA_URL = '/media/'  # Добавляет к файлам префикс
 
 
 # Для отладки
+
 if DEBUG:
 	# pip install django-debug-toolbar  django-livereload-server
-	INSTALLED_APPS.append('livereload')
-	INSTALLED_APPS.append('debug_toolbar')
-	INTERNAL_IPS = [
-			'127.0.0.1',
-	]
-	MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
-	MIDDLEWARE.append('livereload.middleware.LiveReloadScript')
+	# INSTALLED_APPS.append('livereload')
+	# INSTALLED_APPS.append('debug_toolbar')
+	# INTERNAL_IPS = [
+	# 		'127.0.0.1',
+	# ]
+	# MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+	# MIDDLEWARE.append('livereload.middleware.LiveReloadScript')
 	
 	# Отключить кеширование при отладке
 	CACHES = {

@@ -38,7 +38,7 @@ $(document).ready(function () {
 		const dataVar = {
 			csrfmiddlewaretoken: $('#SendTextFromRE').attr('csrfmiddlewaretoken'), // Специально имя для токена
 			// Данные для проверки регулярного выражения
-			data_from_form: $('.TextRe').val(),
+			data_from_form: $('#TextRe').val(),
 			// Шаблон регулярного выражения
 			templates_re: $('#templates_re').val(),
 			// Если существует текст для замены
@@ -68,18 +68,7 @@ $(document).ready(function () {
 			}
 		}).done(function (msg) { // Получаем ответ от сервера, и обрабатываем его.
 			console.log(msg)
-			
-			if (msg['data'].length > 1) {
-				let tmp = '';
-				for (let _x of msg['data']) {
-					tmp += `${_x}\n`;
-				}
-				$('.SendRe').val(tmp);
-			} else {
-				$('.SendRe').val(msg['data'])
-			}
-			
-			
+			$('#SendRe').val(msg['data']);
 		});
 		
 		// Остановить перезагрузку страницы
@@ -95,7 +84,7 @@ $(document).ready(function () {
 	let LastTextIn_TextRe = '';
 	
 	function GetTextFromFormSendTextFromRE_Interval() {
-		let tmp = $('.TextRe').val();
+		let tmp = $('#TextRe').val();
 		if (tmp !== LastTextIn_TextRe) {
 			LastTextIn_TextRe = tmp;
 			console.log(tmp);

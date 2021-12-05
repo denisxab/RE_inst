@@ -1,7 +1,7 @@
 
 
 Внешний вид.
-![Внешний вид](https://i.imgur.com/dvmzOfy.png)
+![Внешний вид](https://i.imgur.com/CPKWv7H.png)
 
 ---
 Установка:

@@ -1,8 +1,9 @@
 {% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="../../static/mainapp/css/main.css"/>
     <meta charset="UTF-8">
     <title>Re</title>
 
@@ -11,8 +12,12 @@
 		const UrlBasketServer = '{% url 'main_url' %}';
     </script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <!-- Bootstrap JS + Popper JS -->
+    <script defer src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
     <script src="{% static 'mainapp/js/jquery-3.6.0.min.js' %} " type="text/javascript"></script>
     <script src="{% static 'mainapp/js/main.js' %} " type="text/javascript"></script>
     <link href="{% static 'mainapp/css/main.css' %}" rel="stylesheet" type="text/css">
@@ -21,60 +26,64 @@
 </head>
 <body>
 
-<div class="menu_container">
+<div class="body_container">
 
 
-    <div>
-        <label> Регулярная функция:
-            <select id="SelectReFun">
-                <option>match</option>
-                <option>search</option>
-                <option>findall</option>
-                <option>split</option>
-                <option>sub</option>
-            </select>
-        </label>
+    <div class="form-floating mb-4" style="width:500px;">
+        <select class="form-select" id="SelectReFun">
+            <option>match</option>
+            <option>search</option>
+            <option>findall</option>
+            <option>split</option>
+            <option>sub</option>
+        </select>
+        <label style="padding-top: 15px"> Регулярная функция:</label>
     </div>
 
     <div>
-        <label>
-            Шаблон<br>
-            <input type="text" id="templates_re">
-        </label><br>
-        <div id="ReplaceTo">
-            <label>
-                Заменить на<br>
-                <input type="text" id="replace_templates_re">
-            </label><br>
+        <div class="form-floating" style="width: 500px;">
+            <input type="text" size="60" id="templates_re" class="form-control" placeholder="_">
+            <label>Шаблон</label>
+        </div>
+
+        <div class="form-floating mt-4" id="ReplaceTo" style="width: 500px;">
+            <input type="text" size="60" id="replace_templates_re" class="form-control" placeholder="_">
+            <label> Заменить на</label>
         </div>
     </div>
-</div>
-
-<div class="textarea_container">
-    <div style="float: left; width: auto; margin-right: 30px ">
-        <form method="post" id="SendTextFromRE"
-              action=""
-              csrfmiddlewaretoken="{{ csrf_token }}">
-
-            <label>
-                Текст
-                <input type="submit" value="Отправить запрос"> <br>
-                <br>
-                <textarea class="TextRe" cols="45" rows="25" style="border-radius: 8px"></textarea>
-            </label><br>
-        </form>
-    </div>
 
 
-    <div style="float: left;width: auto;">
-        <label>
-            Результат<br> <br>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col">
+            <form method="post" id="SendTextFromRE"
+                  action=""
+                  csrfmiddlewaretoken="{{ csrf_token }}">
 
-            <textarea class="SendRe" cols="45" rows="25" style="border-radius: 8px"></textarea>
-        </label><br>
+                <div class="form-floating">
+                <textarea id="TextRe" class="form-control" placeholder="_" cols="45" rows="20"
+                          style="border-radius: 8px;height: 300px"></textarea>
+                    <label>Текст</label>
+                </div>
+                <div>
+                    <input type="submit" class="btn mt-3 btn-secondary" style="border-radius: 4px"
+                           value="Отправить запрос">
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="col">
+            <div class="form-floating">
+                <textarea id="SendRe" class="form-control" placeholder="_" cols="45" rows="20"
+                          style="border-radius: 8px;height: 300px"></textarea>
+                <label>Результат</label>
+            </div>
+        </div>
     </div>
 </div>
 
 
 </body>
 </html>
+

@@ -28,11 +28,11 @@ urlpatterns = [
 # Для debug_toolbar и отдачи статических фалов / медиа фалов
 if settings.DEBUG:
 	# Для отладчика
-	import debug_toolbar
-	
-	urlpatterns.append(
-			path('__debug__/', include(debug_toolbar.urls)),
-	)
+	# import debug_toolbar
+	#
+	# urlpatterns.append(
+	# 		path('__debug__/', include(debug_toolbar.urls)),
+	# )
 	
 	# Для работы static
 	urlpatterns += static(settings.STATIC_URL,

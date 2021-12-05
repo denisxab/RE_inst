@@ -71,12 +71,12 @@ WSGI_APPLICATION = 're_view.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-		'default': {
-				'ENGINE': 'django.db.backends.sqlite3',
-				'NAME'  : BASE_DIR / 'db.sqlite3',
-		}
-}
+# DATABASES = {
+# 		'default': {
+# 				'ENGINE': 'django.db.backends.sqlite3',
+# 				'NAME'  : BASE_DIR / 'db.sqlite3',
+# 		}
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -137,20 +137,20 @@ MEDIA_URL = '/media/'  # Добавляет к файлам префикс
 
 # Для отладки
 
-if DEBUG:
-	# pip install django-debug-toolbar  django-livereload-server
-	# INSTALLED_APPS.append('livereload')
-	# INSTALLED_APPS.append('debug_toolbar')
-	# INTERNAL_IPS = [
-	# 		'127.0.0.1',
-	# ]
-	# MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
-	# MIDDLEWARE.append('livereload.middleware.LiveReloadScript')
-	
-	# Отключить кеширование при отладке
-	CACHES = {
-			
-			'default': {
-					'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-			}
-	}
+# if DEBUG:
+# pip install django-debug-toolbar  django-livereload-server
+# INSTALLED_APPS.append('livereload')
+# INSTALLED_APPS.append('debug_toolbar')
+# INTERNAL_IPS = [
+# 		'127.0.0.1',
+# ]
+# MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+# MIDDLEWARE.append('livereload.middleware.LiveReloadScript')
+
+# Отключить кеширование при отладке
+# CACHES = {
+#
+# 		'default': {
+# 				'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+# 		}
+# }

@@ -1,5 +1,3 @@
-
-
 Внешний вид.
 ![Внешний вид](https://i.imgur.com/CPKWv7H.png)
 
@@ -10,22 +8,24 @@
 git clone https://github.com/denisxab/RE_inst.git;
 cd RE_inst;
 python -m venv venv_dj && . venv_dj/bin/activate;
-pip install -r req.txt;
+pip install -r requirements.txt;
 cd re_view;
 python manage.py migrate;
 ```
 
 Запуск:
+
 ```bash
 python manage.py runserver
 ```
----
-
-Проект написан на `Django`. Его цель - интерактивное 
-выполнение регулярных выражений.
 
 ---
-Поддерживаемые регулярные функции: 
+
+Проект написан на `Django`. Его цель - интерактивное выполнение регулярных выражений.
+
+---
+Поддерживаемые регулярные функции:
+
 - match
 - search
 - findall

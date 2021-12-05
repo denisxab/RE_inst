@@ -1,8 +1,10 @@
-Внешний вид.
+# Внешний вид.
+
 ![Внешний вид](https://i.imgur.com/gYmm1mp.png)
 
----
-Установка:
+# Установка:
+
+Используя виртуальное окружение `Python`
 
 ```bash
 git clone https://github.com/denisxab/RE_inst.git;
@@ -10,16 +12,31 @@ cd RE_inst;
 python -m venv venv_dj && . venv_dj/bin/activate;
 pip install -r requirements.txt;
 cd re_view;
-python manage.py migrate;
 ```
 
 Запуск:
 
 ```bash
-python manage.py runserver
+python manage.py runserver 127.0.0.1:8080
 ```
 
 ---
+
+Используя `Docker` (Вес образа `99.1 мб`)
+
+```bash
+git clone https://github.com/denisxab/RE_inst.git;
+cd RE_inst;
+docker build -t re_inst .;
+```
+
+Запуск:
+
+```bash
+docker run -ti --rm  --name re_inst_canteiner -p 8080:8080  re_inst;
+```
+
+# О чем проект ?
 
 Проект написан на `Django`. Его цель - интерактивное выполнение регулярных выражений.
 

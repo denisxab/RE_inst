@@ -1,5 +1,5 @@
 Внешний вид.
-![Внешний вид](https://i.imgur.com/CPKWv7H.png)
+![Внешний вид](https://i.imgur.com/gYmm1mp.png)
 
 ---
 Установка:

@@ -5,6 +5,7 @@
     --Border: #c1c8c7;
     --1: #001b48;
     --2: #018abd;
+    --CoolorFooter: rgba(193, 200, 199, 0.45);
 }
 
 body {
@@ -21,14 +22,33 @@ label {
     color: #666b3a;
 }
 
-.body-container {
+.body-box {
     margin-left: auto;
     margin-right: auto;
-    padding: 24px;
     margin-top: 100px;
     width: 70%;
     width-max: 800px;
     border: var(--Border) 2px solid;
     border-radius: 8px;
+    box-shadow: 0 0 60px 60px rgba(103, 109, 110, 0.64);
 }
 
+.body-container {
+    padding: 24px;
+}
+
+.footer {
+    border-radius: 4px;
+    padding: 10px;
+    background: #6d736e;
+    color: var(--CoolorFooter);
+}
+
+
+.link:link {
+    color: var(--CoolorFooter);
+}
+
+.link:visited {
+    color: var(--CoolorFooter);
+}

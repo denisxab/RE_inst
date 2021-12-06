@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="stylesheet" type="text/css" href="../../static/mainapp/css/main.css"/>
 	<meta charset="UTF-8">
 	<title>Re</title>
 	<script>
@@ -18,66 +19,85 @@
 </head>
 <body>
 
-<div class="body-container">
-	<div class="row">
-		<div class="col align-self-center mb-4">
-			<div class="form-floating mb-4" style="width:500px;">
-				<select class="form-select" id="SelectReFun">
-					{% for re_fun in list_re_fun %}
-						<option>{{ re_fun }}</option>
-					{% endfor %}
-				</select>
-				<label style="padding-top: 15px"> Регулярная функция:</label>
-			</div>
-			<div>
-				<div class="form-floating" style="width: 500px;">
-					<input type="text" size="60" id="templates_re" class="form-control" placeholder="_">
-					<label>Шаблон</label>
-				</div>
 
-				<div class="form-floating mt-4" id="ReplaceTo" style="width: 500px;">
-					<input type="text" size="60" id="replace_templates_re" class="form-control" placeholder="_">
-					<label> Заменить на</label>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="form-floating">
-                <textarea id="Draft" class="form-control" placeholder="_"
-                          style="border-radius: 8px;min-width: 300px;height: 300px;background: var(--Border);"></textarea>
-				<label>Черновик</label>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="row" style="margin-top: 30px;">
-		<div class="col">
-			<form method="post" id="SendTextFromRE"
-			      action=""
-			      csrfmiddlewaretoken="{{ csrf_token }}">
-
-				<div class="form-floating">
-                <textarea id="TextRe" class="form-control" placeholder="_" cols="45" rows="20"
-                          style="border-radius: 8px;height: 300px"></textarea>
-					<label>Текст</label>
+<div class="body-box">
+	<div class="body-container">
+		<div class="row">
+			<div class="col align-self-center mb-4">
+				{# Меню с достпными регулярными функциями  #}
+				<div class="form-floating mb-4" style="width:500px;">
+					<select class="form-select" id="SelectReFun">
+						{% for re_fun in list_re_fun %}
+							<option>{{ re_fun }}</option>
+						{% endfor %}
+					</select>
+					<label style="padding-top: 15px"> Регулярная функция:</label>
 				</div>
 				<div>
-					<input type="submit" class="btn mt-3 btn-secondary" style="border-radius: 4px"
-					       value="Отправить запрос">
+					{# Текстовое поля для ввода шаблон #}
+					<div class="form-floating input_re" style="width: 500px;">
+						<input type="text" size="60" id="templates_re" class="form-control" placeholder="_">
+						<label>Шаблон</label>
+					</div>
+					{# Текстовое поля для ввода замены, появляется при выборе регулярнйо функции `sub`  #}
+					<div class="form-floating mt-4 input_re" id="ReplaceTo" style="width: 500px;">
+						<input type="text" size="60" id="replace_templates_re" class="form-control" placeholder="_">
+						<label> Заменить на</label>
+					</div>
 				</div>
-
-			</form>
+			</div>
+			<div class="col">
+				{# Текстовое поля для черновика  #}
+				<div class="form-floating">
+                <textarea id="Draft" class="form-control" placeholder="_"
+                          style="border-radius: 8px;min-width: 300px;height: 300px;background: var(--Border);"></textarea>
+					<label>Черновик</label>
+				</div>
+			</div>
 		</div>
-		<div class="col">
-			<div class="form-floating">
+		<div class="row" style="margin-top: 30px;">
+			{# Форма для ввода текста #}
+			<div class="col">
+				<form method="post" id="SendTextFromRE"
+				      action=""
+				      csrfmiddlewaretoken="{{ csrf_token }}">
+					<div class="form-floating">
+	                <textarea id="TextRe" class="form-control" placeholder="_" cols="45" rows="20"
+	                          style="border-radius: 8px;height: 300px"></textarea>
+						<label>Текст</label>
+					</div>
+					{# Кнопка для ручного отправления формы с текстов #}
+					<div>
+						<input type="submit" class="btn mt-3 btn-secondary" style="border-radius: 4px"
+						       value="Отправить запрос">
+					</div>
+				</form>
+			</div>
+			{# Форма для вывода результата  #}
+			<div class="col">
+				<div class="form-floating">
                 <textarea id="SendRe" class="form-control" placeholder="_" cols="45" rows="20"
                           style="border-radius: 8px;height: 300px"></textarea>
-				<label>Результат</label>
+					<label>Результат</label>
+				</div>
 			</div>
 		</div>
 	</div>
+	{# Информирование о проекте #}
+	<div class="footer mt-5">
+		Данная страница имеет следующие особенности: <br>
+		- Поле с текстом автоматически отправляет запрос на сервер (если он отличается от прошлого) каждые 0.5
+		секунд. <br>
+		- При нажатии клавиши `Enter`, на элементе ввода текста "Шаблон", "Заменить на", форма отправляется на
+		сервер.<br>
+		- Черновик не отправляется на сервер, он нужен исключительно для заметок пользователя. <br> <br>
+
+		<a href="https://github.com/denisxab/RE_inst" class="link">Автор: denisxab</a> <br>
+		Лицензия: MIT
+	</div>
 </div>
+
+
 </body>
 </html>
 

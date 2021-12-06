@@ -1,11 +1,11 @@
-//   Когда `html`  документ  загружен
+// Когда `html`  документ  загружен.
 $(document).ready(function () {
 	
 	//// Меню с регулярными функциями
-	// Переменная для хранения выбранной регулярной функции
+	// переменная для хранения выбранной регулярной функции.
 	let SelectReFun = $('#SelectReFun')[0].options[$(`#SelectReFun`)[0].selectedIndex].value;
 	console.log("SelectReFun: " + SelectReFun);
-	//  При выборе другого `option` обновить значение переменной `SelectReFun`
+	//  При выборе другого `option` обновить значение переменной `SelectReFun`.
 	$("#SelectReFun").change(
 		function () {
 			// location = this.value
@@ -16,7 +16,7 @@ $(document).ready(function () {
 			
 		});
 	
-	// Проверяет нужно ли показывать элемент для замены текста
+	// Проверяет нужно ли показывать элемент для замены текста.
 	function IsShowReplaceTo(_SelectReFun) {
 		if (_SelectReFun === 'sub') {
 			$('#ReplaceTo').show(300);
@@ -25,13 +25,13 @@ $(document).ready(function () {
 		}
 	}
 	
-	// При загрузке элемента проверить необходимость показать элемент
+	// При загрузке элемента проверить необходимость показать элемент.
 	IsShowReplaceTo(SelectReFun)
 	
 	////
 	
-	//// Работа с сервером
-	// Отправка данных на сервер, для выполнения регулярных выражения
+	//// Работа с сервером.
+	// Отправка данных на сервер, для выполнения регулярных выражения.
 	function SendDataFromServer_Re() {
 		
 		// Получаем данные из формы, и создаем объект
@@ -79,8 +79,8 @@ $(document).ready(function () {
 	$("#SendTextFromRE").submit(SendDataFromServer_Re);
 	////
 	
-	//// Работа с текстовым полем
-	// Получать данные из формы через указанное количество секунд
+	//// Работа с текстовым полем.
+	// Получить данные из формы через указанное количество секунд.
 	let LastTextIn_TextRe = '';
 	
 	function GetTextFromFormSendTextFromRE_Interval() {
@@ -93,5 +93,16 @@ $(document).ready(function () {
 	}
 	
 	setInterval(GetTextFromFormSendTextFromRE_Interval, 500,);
+	
+	
+	// Отслеживаем нажатие `Enter`, если он нажат то отправляем данные на сервер.
+	$('.input_re').keydown(function (e) {
+		if (e.keyCode === 13) {
+			console.log(`Class:${$(this).attr('class')};Id:${$(this).attr('id')}`);
+			SendDataFromServer_Re();
+		}
+	});
 	////
+	
+	
 })

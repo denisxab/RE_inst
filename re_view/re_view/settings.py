@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+from loguru import logger
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -80,7 +82,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'ru'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -97,6 +99,9 @@ STATICFILES_DIRS = [  # Список нестандартных путей ис�
 # Изображения
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Имя папки в корневом каталоге, для изображений
 MEDIA_URL = '/media/'  # Добавляет к файлам префикс
+
+logger.add("log/mainapp.log", level="INFO",
+           format="{time:YYYY-MM-DD-HH:mm:ss}‡{message}‡{file}‡{function}‡{level}‡{line}‡{exception}‡", )
 
 # Для отладки
 # if DEBUG:

@@ -112,3 +112,267 @@
 `;Текст для замены: `df`Результат:{'result': True, 'data': '\n'};‡views.py‡post‡INFO‡59‡‡
 2021-12-06-18:35:13‡Функция:`sub`;Шаблон:`asd`;Текст:`
 `;Текст для замены: `df`Результат:{'result': True, 'data': '\n'};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:00‡Функция:`match`;Шаблон:``;Текст:`			"employee1@mail.ru",
+			"employee2@tut.by",
+			"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:04‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+			"employee2@tut.by",
+			"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:05‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+	"employee2@tut.by",
+			"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:05‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+			"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:06‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+	"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:06‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+			"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:07‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+		"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:07‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+			"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:08‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+		"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:08‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+"employee2@mydomain.by",
+			"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:09‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+"employee2@mydomain.by",
+	"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:09‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+"employee2@mydomain.by",
+"employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:10‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+"employee3@yandex.ru",
+"employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:11‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+"employee2@tut.by",
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:11‡Функция:`match`;Шаблон:``;Текст:`"employee1@mail.ru",
+employee2@tut.by",
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:12‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru",
+employee2@tut.by",
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:13‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru"
+employee2@tut.by",
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:14‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by",
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:14‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru",
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:16‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by",
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:17‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by,
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:18‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by",
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:19‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by",`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:20‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by,`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:21‡Функция:`match`;Шаблон:``;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': False, 'data': ''};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:32‡Функция:`split`;Шаблон:`[@.]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru\\nemployee2', 'tut', 'by\\nemployee3', 'yandex', 'ru\\nemployee1', 'mydomain', 'by\\nemployee2', 'mydomain', 'by\\nemployee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:40‡Функция:`split`;Шаблон:`[@.]\n`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:44‡Функция:`split`;Шаблон:`[@.]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru\\nemployee2', 'tut', 'by\\nemployee3', 'yandex', 'ru\\nemployee1', 'mydomain', 'by\\nemployee2', 'mydomain', 'by\\nemployee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:48‡Функция:`split`;Шаблон:`[@.\n]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru', 'employee2', 'tut', 'by', 'employee3', 'yandex', 'ru', 'employee1', 'mydomain', 'by', 'employee2', 'mydomain', 'by', 'employee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:52:55‡Функция:`split`;Шаблон:`([@.\n])`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', '@', 'mail', '.', 'ru', '\\n', 'employee2', '@', 'tut', '.', 'by', '\\n', 'employee3', '@', 'yandex', '.', 'ru', '\\n', 'employee1', '@', 'mydomain', '.', 'by', '\\n', 'employee2', '@', 'mydomain', '.', 'by', '\\n', 'employee3', '@', 'mydomain', '.', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:04‡Функция:`split`;Шаблон:`([@.]\n)`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:08‡Функция:`split`;Шаблон:`([@.] \n)`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:11‡Функция:`split`;Шаблон:`([@.]\n)`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:14‡Функция:`split`;Шаблон:`([@.])`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', '@', 'mail', '.', 'ru\\nemployee2', '@', 'tut', '.', 'by\\nemployee3', '@', 'yandex', '.', 'ru\\nemployee1', '@', 'mydomain', '.', 'by\\nemployee2', '@', 'mydomain', '.', 'by\\nemployee3', '@', 'mydomain', '.', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:21‡Функция:`split`;Шаблон:`[@.]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru\\nemployee2', 'tut', 'by\\nemployee3', 'yandex', 'ru\\nemployee1', 'mydomain', 'by\\nemployee2', 'mydomain', 'by\\nemployee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:26‡Функция:`split`;Шаблон:`[@.\n]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru', 'employee2', 'tut', 'by', 'employee3', 'yandex', 'ru', 'employee1', 'mydomain', 'by', 'employee2', 'mydomain', 'by', 'employee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:45‡Функция:`split`;Шаблон:`[@.][\n]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:53:52‡Функция:`split`;Шаблон:`[@.\n]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru', 'employee2', 'tut', 'by', 'employee3', 'yandex', 'ru', 'employee1', 'mydomain', 'by', 'employee2', 'mydomain', 'by', 'employee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:03‡Функция:`split`;Шаблон:`[@.]`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', 'mail', 'ru\\nemployee2', 'tut', 'by\\nemployee3', 'yandex', 'ru\\nemployee1', 'mydomain', 'by\\nemployee2', 'mydomain', 'by\\nemployee3', 'mydomain', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:08‡Функция:`split`;Шаблон:`([@.])`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', '@', 'mail', '.', 'ru\\nemployee2', '@', 'tut', '.', 'by\\nemployee3', '@', 'yandex', '.', 'ru\\nemployee1', '@', 'mydomain', '.', 'by\\nemployee2', '@', 'mydomain', '.', 'by\\nemployee3', '@', 'mydomain', '.', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:11‡Функция:`split`;Шаблон:`([@.]\n)`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:20‡Функция:`split`;Шаблон:`([@.\n])`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1', '@', 'mail', '.', 'ru', '\\n', 'employee2', '@', 'tut', '.', 'by', '\\n', 'employee3', '@', 'yandex', '.', 'ru', '\\n', 'employee1', '@', 'mydomain', '.', 'by', '\\n', 'employee2', '@', 'mydomain', '.', 'by', '\\n', 'employee3', '@', 'mydomain', '.', 'by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:32‡Функция:`split`;Шаблон:`([@.]+\n)`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Результат:{'result': True, 'data': "['employee1@mail.ru\\nemployee2@tut.by\\nemployee3@yandex.ru\\nemployee1@mydomain.by\\nemployee2@mydomain.by\\nemployee3@mydomain.by']"};‡views.py‡post‡INFO‡59‡‡
+2021-12-06-18:54:57‡Функция:`sub`;Шаблон:`mail|tut|yandex|mydomain`;Текст:`employee1@mail.ru
+employee2@tut.by
+employee3@yandex.ru
+employee1@mydomain.by
+employee2@mydomain.by
+employee3@mydomain.by`;Текст для замены: `почта`Результат:{'result': True, 'data': 'employee1@почта.ru\nemployee2@почта.by\nemployee3@почта.ru\nemployee1@почта.by\nemployee2@почта.by\nemployee3@почта.by'};‡views.py‡post‡INFO‡59‡‡

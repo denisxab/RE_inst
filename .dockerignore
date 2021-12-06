@@ -2,4 +2,4 @@ venv
 .idea
 .git
 .gitignore
-re_view/log
+re_view/log/*

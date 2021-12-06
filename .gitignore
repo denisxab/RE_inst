@@ -1,4 +1,4 @@
 venv
 .idea
 .git
-re_view/log
+re_view/log/*

@@ -2,3 +2,4 @@ venv
 .idea
 .git
 re_view/log/*
+re_view/mainapp/__pycache__

@@ -1,6 +1,6 @@
 # Внешний вид.
 
-![Внешний вид](https://i.imgur.com/Zn6hNqn.png)
+![Внешний вид](https://i.imgur.com/7Ccbrsj.png)
 
 # Установка:
 

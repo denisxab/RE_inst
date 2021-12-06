@@ -36,12 +36,12 @@
 				<div>
 					{# Текстовое поля для ввода шаблон #}
 					<div class="form-floating input_re" style="width: 500px;">
-						<input type="text" size="60" id="templates_re" class="form-control" placeholder="_">
+						<input type="text" size="60" id="templates_re" class="form-control">
 						<label>Шаблон</label>
 					</div>
 					{# Текстовое поля для ввода замены, появляется при выборе регулярнйо функции `sub`  #}
 					<div class="form-floating mt-4 input_re" id="ReplaceTo" style="width: 500px;">
-						<input type="text" size="60" id="replace_templates_re" class="form-control" placeholder="_">
+						<input type="text" size="60" id="replace_templates_re" class="form-control">
 						<label> Заменить на</label>
 					</div>
 				</div>
@@ -80,6 +80,7 @@
                           style="border-radius: 8px;height: 300px"></textarea>
 					<label>Результат</label>
 				</div>
+				<input type="text" class="form-control mt-3" id="TextFuncRe" size="60">
 			</div>
 		</div>
 	</div>

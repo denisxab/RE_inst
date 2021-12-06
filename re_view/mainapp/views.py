@@ -38,22 +38,35 @@ class RePage(View):
 		replace_templates_re: str = request.POST.get('replace_templates_re', '')
 		
 		#  Если есть шаблон текста и регулярная функция.
-		res: dict[str:Union[bool, str]] = {"result": False, "data": ''}
+		res: dict[str:Union[bool, str]] = {"result": False, "data": '', "execute_fun": ''}
+		
 		if templates_re and request_text_re:
 			#  Если вызвана функция [sub, split].
 			if re_fun.__name__ in {"sub", "split", "findall"}:
 				if re_fun.__name__ == 'sub':
 					_res_text = re_fun(pattern=templates_re, repl=replace_templates_re, string=request_text_re, )
+					res['execute_fun'] = f"re.{re_fun.__name__}(" \
+					                     f"pattern=r'{templates_re}'," \
+					                     f"repl='{replace_templates_re}'," \
+					                     f"string='...')"
 				else:
 					_res_text = re_fun(pattern=templates_re, string=request_text_re, )
+					res['execute_fun'] = f"re.{re_fun.__name__}(" \
+					                     f"pattern=r'{templates_re}'," \
+					                     f"string='...')"
 				if _res_text:
-					res = {"result": True, "data": str(_res_text)}
+					res['result'] = True
+					res['data'] = str(_res_text)
 			
 			# Если вызвана функция [match, search]
 			elif re_fun.__name__ in {'match', 'search', }:
 				_res_text = re_fun(pattern=templates_re, string=request_text_re, )
+				res['execute_fun'] = f"re.{re_fun.__name__}(" \
+				                     f"pattern=r'{templates_re}'," \
+				                     f"string='...')"
 				if _res_text:
-					res = {"result": True, "data": str(_res_text.groups())}
+					res['result'] = True
+					res['data'] = str(_res_text.groups())
 		
 		# Логирование
 		logger.info(

@@ -67,8 +67,9 @@ $(document).ready(function () {
 				console.log(exceptionVar)
 			}
 		}).done(function (msg) { // Получаем ответ от сервера, и обрабатываем его.
-			console.log(msg)
+			console.log(msg);
 			$('#SendRe').val(msg['data']);
+			$('#TextFuncRe').val(msg['execute_fun']);
 		});
 		
 		// Остановить перезагрузку страницы
@@ -102,6 +103,7 @@ $(document).ready(function () {
 			SendDataFromServer_Re();
 		}
 	});
+	
 	////
 	
 	

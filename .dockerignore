@@ -1,4 +1,5 @@
-.idea
 venv
+.idea
 .git
 .gitignore
+re_view/log

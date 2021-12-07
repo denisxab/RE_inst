@@ -2,6 +2,8 @@
 
 ![Внешний вид](https://i.imgur.com/7Ccbrsj.png)
 
+[Тестовый хостинг](https://vast-wildwood-98166.herokuapp.com/)
+
 # Установка:
 
 Используя виртуальное окружение `Python`

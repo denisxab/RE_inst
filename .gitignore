@@ -3,3 +3,4 @@ venv
 .git
 re_view/log/*
 re_view/mainapp/__pycache__
+re_view/__env.env

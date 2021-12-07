@@ -1,4 +1,5 @@
 import os
+import re
 from pathlib import Path
 
 from loguru import logger
@@ -6,11 +7,26 @@ from loguru import logger
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--i0wbm-w_cd-ux$69m=&%994@t$3%q=c+-+omf5jq28xrs1v4s'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+def read_env_file_and_set_from_venv(file_name: str):
+	"""Чтение переменных окружения из указанного файла, и добавление их в ПО `python`"""
+	with open(file_name, 'r', encoding='utf-8') as _file:
+		res = {}
+		for line in _file:
+			tmp = re.sub(r'^#[\s\w\d\W\t]*|[\t\s]', '', line)
+			if tmp:
+				k, v = tmp.split('=', 1)
+				res[k] = v
+	os.environ.update(res)
+	print(res)
+
+
 DEBUG = True
+
+if not DEBUG:
+	read_env_file_and_set_from_venv('./__env.env')
+
+SECRET_KEY = os.environ.get("SECRET_KEY_RE_inst", "VerySecret")
 
 ALLOWED_HOSTS = ['*']
 
